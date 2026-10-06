@@ -1,0 +1,75 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPljPArqB9l41DM2HQD45Ru",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Tijo-git/INMCA26/blob/main/PROJECT%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sGAM6HLylGSU",
+        "outputId": "be0e6870-42df-496e-c5d2-ab11fab5a8dc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter marks: 34\n",
+            "Grade: F\n"
+          ]
+        }
+      ],
+      "source": [
+        "def calculate_grade(marks):\n",
+        "    if marks >= 90:\n",
+        "        return \"A+\"\n",
+        "    elif marks >= 80:\n",
+        "        return \"A\"\n",
+        "    elif marks >= 70:\n",
+        "        return \"B\"\n",
+        "    elif marks >= 60:\n",
+        "        return \"C\"\n",
+        "    elif marks >= 50:\n",
+        "        return \"D\"\n",
+        "    else:\n",
+        "        return \"F\"\n",
+        "\n",
+        "\n",
+        "marks = float(input(\"Enter marks: \"))\n",
+        "\n",
+        "if 0 <= marks <= 100:\n",
+        "    grade = calculate_grade(marks)\n",
+        "    print(f\"Grade: {grade}\")\n",
+        "else:\n",
+        "    print(\"Please enter marks between 0 and 100.\")\n"
+      ]
+    }
+  ]
+}
